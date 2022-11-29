@@ -32,3 +32,9 @@ h4{
 .sidebar{
   width:30%;
 }
+
+.reset{
+  margin-top:10px;
+  font-weight: 700;
+  font-size:15px;
+}

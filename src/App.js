@@ -25,6 +25,18 @@ function App() {
 
   const handleFilterReset = () => {
     setData(bakeryData);
+    let box = document.getElementById("biscuit");
+    box.checked = false;
+    let box2 = document.getElementById("bun");
+    box2.checked = false;
+    let box3 = document.getElementById("bread");
+    box3.checked = false;
+    let box4 = document.getElementById("cake");
+    box4.checked = false;
+    let box5 = document.getElementById("sweet");
+    box5.checked = false;
+    document.getElementById("lb").value = "";
+    document.getElementById("ub").value = "";
   }
 
   const handleSortPrice = () => {
@@ -76,7 +88,7 @@ function App() {
             </div>
             <button onClick={handleTypeFilter}>Filter</button>
             <div>
-              <button onClick={handleFilterReset}>Clear all filters</button>
+              <button className="reset" onClick={handleFilterReset}>Clear all filters</button>
             </div>
             <h4> Sort by price</h4>
             <button onClick={handleSortPrice}> Sort </button>
